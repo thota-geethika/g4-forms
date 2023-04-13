@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            background-color: #D2DAFF;
+            display: grid;
+            border: 1px solid black;
+            width: 400px;
+            height: 600px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        body{
+            background-image: url(images/bar.jpg);
+        }
+        h1{
+            text-align: center;
+            border: 1px solid black; 
+            width: 200px; 
+            background-color: #B1B2FF; 
+            margin: 20px auto;
+        }
+        input{
+            margin-bottom: 5px;
+            border-radius: 4px; 
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Naveen Bar</h1>
+    <div class="form">
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name"><br>
+            <label for="gender">Gender</label>
+            <div class="gender">
+                <input type="radio" id="f" name="gender"> <label for="f">Female</label>
+                <input type="radio" id="m" name="gender"> <label for="m">Male</label>
+                <input type="radio" id="o" name="gender"> <label for="o">Other</label>
+            </div>
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact"><br>
+            <label for="mailId">Email id</label>
+            <input type="email" id="mailId"><br>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob">
+            <label for="typess">Choose</label>
+            <select id="typess">
+                <option>Beer</option>
+                <option>wine</option>
+                <option>cider</option>
+                <option>Sake</option>
+                <option>Huangjiu</option>
+                <option>Vodka</option>
+                <option>Gin</option>
+                <option>Baijiu</option>
+                <option>Soju</option>
+                <option>Tequila</option>
+                <option>Whisky</option>
+            </select>
+        </form>
+    </div>
+</body>
+</html>
